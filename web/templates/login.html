@@ -13,6 +13,7 @@
                 <h2>Login</h2>
                 <form method="post" class="login" action="{% url 'web:loginUsuario' %}">
                     {% csrf_token %}
+                    <input type="hidden" name="destino" value="{{destino}}"/>
                     <p>
                         <label for="username">E-mail <span class="required">*</span></label>
                         <input type="text" id="username" name="usuario">
