@@ -11,7 +11,7 @@
             <ul class="cart_list">
                 {% for key,value in request.session.cart.items %}
                 <li>
-                    <a href="{% url "web:eliminarProductoCarrito" value.producto_id %}" class="remove">&times;</a>
+                    <a href="{% url 'web:eliminarProductoCarrito' value.producto_id %}" class="remove">&times;</a>
                     <a href="#">
                         <img src="{{value.imagen}}" alt="">
                         {{value.nombre}}
@@ -22,7 +22,7 @@
             </ul>
             <p class="total"><b>Total:</b> ${{request.session.cartMontoTotal}}</p>
             <p class="buttons">
-                <a href="{% url "web:carrito" %}" class="button">Ver Carrito</a>
+                <a href="{% url 'web:carrito' %}" class="button">Ver Carrito</a>
                 <a href="#" class="button">Pedido</a>
             </p>
         </div>
