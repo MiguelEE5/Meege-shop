@@ -98,13 +98,12 @@ table {
 }
 
 body {
-	-webkit-text-size-adjust: 100%;
-	font-size: 14px;
-	line-height: 1.42857143;
-	background: #f1f1fb;
-
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background: #f1f1fb !important;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 body * {
 	box-sizing: border-box;

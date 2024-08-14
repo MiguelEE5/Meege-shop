@@ -69,8 +69,7 @@
             <h1>{{producto.nombre}}</h1>
             <div class="variations_form cart">
                 <p class="prod-price">${{producto.precio}}</p>
-                <p class="prod-excerpt">{{producto.descripcion}}... 
-                    <a id="prod-showdesc" class="prod-excerpt-more" href="#">read more</a></p>
+                <p class="prod-excerpt">{{producto.descripcion}}</p>   
                 <div class="prod-add">
                     <form action="{% url 'web:agregarCarrito' producto.id %}" method="post">
                         {% csrf_token %}
