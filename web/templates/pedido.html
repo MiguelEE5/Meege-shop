@@ -2,7 +2,7 @@
 {% block content %}
 <h1 class="maincont-ttl">REGISTRO DE PEDIDO</h1>
     <ul class="b-crumbs">
-        <li><a href="/">Home</a></li>
+        <li><a href="/">Inicio</a></li>
         <li>pedido</li>
     </ul>
     <form method="post" action="{% url 'web:confirmarPedido' %}" class="register">
@@ -52,7 +52,7 @@
                         <div class="prod-li-cont">
                             <div class="prod-li-ttl-wrap">
                                 <p>
-                                    <a href="#">value.categoria</a>
+                                    <a href="#">{{value.categoria}}</a>
                                 </p>
                                 <h3><a href="product.html">{{ value.nombre }}</a></h3>
                             </div>

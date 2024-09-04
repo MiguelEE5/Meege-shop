@@ -231,8 +231,8 @@ def view_that_asks_for_money(request):
     paypal_dict = {
         "business": "sb-zkiwm30902257@business.example.com",
         "amount": "100.00",
-        "item_name": "Producto de prueba Meegeshop",
-        "invoice": "100-MEEGE",
+        "item_name": "Producto de prueba MeegeShop",
+        "invoice": "100-Mee",
         "notify_url": request.build_absolute_uri(reverse('paypal-ipn')),
         "return": request.build_absolute_uri('/'),
         "cancel_return": request.build_absolute_uri('/logout'),
